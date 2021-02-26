@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ru.smartconstask.beans.Account;
-import ru.smartconstask.beans.Client;
 import ru.smartconstask.services.Services;
 
 @Controller

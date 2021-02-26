@@ -30,17 +30,6 @@ public class Client {
     private String surname;
 
     /**
-     * Конструктор, принимающий все параметры
-     */
-    public Client(int id, String login, String psswd, String firstname, String surname) {
-        this.id = id;
-        this.login = login;
-        this.psswd = psswd;
-        this.firstname = firstname;
-        this.surname = surname;
-    }
-
-    /**
      * Конструктор с отдельными параметрами
      * @param id идентификатор
      * @param firstname имя
@@ -98,9 +87,6 @@ public class Client {
         this.surname = secondname;
     }
 
-    public String getFullName(String surname, String firstname) {
-        return String.join(" ", surname, firstname);
-    }
 
     @Override
     public String toString() {

@@ -16,15 +16,19 @@ import java.util.List;
 @Controller
 public class HomeController {
 
-    @Autowired
+
     private Services<Client> clientServices;
 
-    @Autowired
     private Services<Account> accountServices;
 
-    @Autowired
     private Services<TransactionData> transactionDataServices;
 
+    @Autowired
+    public HomeController(Services<Client> clientServices, Services<Account> accountServices, Services<TransactionData> transactionDataServices) {
+        this.clientServices = clientServices;
+        this.accountServices = accountServices;
+        this.transactionDataServices = transactionDataServices;
+    }
 
     @RequestMapping("/")
     public String home(){

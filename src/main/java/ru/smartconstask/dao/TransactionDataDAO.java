@@ -21,7 +21,6 @@ import java.util.List;
 @Component
 public class TransactionDataDAO implements DAO<TransactionData> {
 
-    NamedParameterJdbcTemplate njdbc;
 
     JdbcTemplate jdbcTemplate;
     private static final Logger log = LoggerFactory.getLogger(AccountDAO.class);
